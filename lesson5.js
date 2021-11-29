@@ -32,7 +32,7 @@ const fs = require("fs");
       });
       const HTML = fs
         .readFileSync(path.join(__dirname, "index.html"), "utf-8")
-        .replace("Главная страница!!!!", linksList);
+        .replace("Главная страница!!", linksList);
       res.writeHead(200, "OK", {
         "Content-Type": "text/html",
       });
